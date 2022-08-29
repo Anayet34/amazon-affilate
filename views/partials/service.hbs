@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Man Woman</title>
+  </head>
+  <body>
+    
+    <style>
+        .service{
+            padding: 1.8rem;
+            background: rgb(241, 219, 223);
+            
+        }
+        
+
+    </style>
+
+     <div class="container-fluid"> 
+
+        <div class="row">
+            {{#each services}}
+                
+            <div class="col-6 col-md-4 col-lg-3 service">
+
+             
+                 <div class="card"style="width:18rem ">
+                    
+                    <img src="{{this.imageUrl}}" alt="" class="card-img-top w-75 pic">
+                    <div class="card-body rounded">
+                        <h5 class="card-title text-danger">{{this.title}}</h5>
+                        <p class="card-text text-body">{{this.description}}</p>
+                    </div>
+                    <div class="btn">
+                         <a class="btn btn-primary" href="{{this.linkText}}" role="button">{{this.link}}</a>
+                    </div>
+                       
+                </div>
+                 
+            </div>
+            {{/each}}
+
+  
+
+
+
+            
+ 
+             
+            
+           
+
+            {{!-- <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="static/images/02.jpg" alt="" class="card-img-top img-thumbnail w-50 rounded mx-auto d-block">
+                    <div class="card-body rounded">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid corporis? <br/>Price=10$</p>
+                    </div>
+                    <div class="btn">
+                         <a class="btn btn-secondary" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" role="button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="static/images/03.jpg" alt="" class="card-img-top img-thumbnail w-50 rounded mx-auto d-block">
+                    <div class="card-body rounded">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid corporis? <br/>Price=10$</p>
+                    </div>
+                    <div class="btn">
+                         <a class="btn btn-secondary" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" role="button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="static/images/02.jpg" alt="" class="card-img-top img-thumbnail w-50 rounded mx-auto d-block">
+                    <div class="card-body rounded">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid corporis? <br/>Price=10$</p>
+                    </div>
+                    <div class="btn">
+                         <a class="btn btn-secondary" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" role="button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="static/images/03.jpg" alt="" class="card-img-top img-thumbnail w-50 rounded mx-auto d-block">
+                    <div class="card-body rounded">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid corporis? <br/>Price=10$</p>
+                    </div>
+                    <div class="btn">
+                        <a class="btn btn-secondary" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" role="button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="static/images/02.jpg" alt="" class="card-img-top img-thumbnail w-50 rounded mx-auto d-block">
+                    <div class="card-body rounded">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid corporis? <br/>Price=10$</p>
+                    </div>
+                    <div class="btn">
+                         <a class="btn btn-secondary" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" role="button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="static/images/03.jpg" alt="" class="card-img-top img-thumbnail w-50 rounded mx-auto d-block">
+                    <div class="card-body rounded">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid corporis? <br/>Price=10$</p>
+
+                    </div>
+                    <div class="btn">
+                        <a class="btn btn-secondary" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" role="button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="static/images/02.jpg" alt="" class="card-img-top img-thumbnail w-50 rounded mx-auto d-block">
+                    <div class="card-body rounded">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid corporis? <br/>Price=10$</p>
+                    </div>
+                    <div class="btn">
+                        <a class="btn btn-secondary" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" role="button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="static/images/03.jpg" alt="" class="card-img-top img-thumbnail w-50 rounded mx-auto d-block">
+                    <div class="card-body rounded">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid corporis? <br/>Price=10$</p>
+                    </div>
+                    <div class="btn">
+                        <a class="btn btn-secondary" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" role="button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="static/images/02.jpg" alt="" class="card-img-top img-thumbnail w-50 rounded mx-auto d-block">
+                    <div class="card-body rounded">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid corporis? <br/>Price=10$</p>
+                    </div>
+                    <div class="btn">
+                        <a class="btn btn-secondary" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" role="button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="static/images/03.jpg" alt="" class="card-img-top img-thumbnail w-50 rounded mx-auto d-block">
+                    <div class="card-body rounded">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid corporis? <br/>Price=10$</p>
+                    </div>
+                    <div class="btn">
+                         <a class="btn btn-secondary" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" role="button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="static/images/02.jpg" alt="" class="card-img-top img-thumbnail w-50 rounded mx-auto d-block">
+                    <div class="card-body rounded">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid corporis? <br/>Price=10$</p>
+                    </div>
+                    <div class="btn">
+                         <a class="btn btn-secondary" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" role="button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="static/images/03.jpg" alt="" class="card-img-top img-thumbnail w-50 rounded mx-auto d-block">
+                    <div class="card-body rounded">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid corporis? <br/>Price=10$</p>
+                    </div>
+                    <div class="btn">
+                         <a class="btn btn-secondary" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" role="button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="static/images/02.jpg" alt="" class="card-img-top img-thumbnail w-50 rounded mx-auto d-block">
+                    <div class="card-body rounded">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid corporis? <br/>Price=10$</p>
+                    </div>
+                    <div class="btn">
+                         <a class="btn btn-secondary" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" role="button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="static/images/03.jpg" alt="" class="card-img-top img-thumbnail w-50 rounded mx-auto d-block">
+                    <div class="card-body rounded">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid corporis? <br/>Price=10$</p>
+                    </div>
+                    <div class="btn">
+                         <a class="btn btn-secondary" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" role="button">Buy Now</a>
+                    </div>
+                </div>
+            </div> --}}
+        </div>
+     </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+   
+  </body>
+</html>

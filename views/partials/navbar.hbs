@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .nav{
+      background-color: rgb(233, 134, 150); 
+      font-size: 1.2rem;
+      padding: 2rem;
+    }
+    .style{
+      font-weight: bold;
+      font-style: italic;
+      color: rgb(24, 238, 192);
+      
+    }
+    .zon{
+      color: rgba(81, 19, 252, 0.719);
+      font-weight: bold;
+      font-style: italic;
+    }
+
+  </style>
+
+  <nav class="navbar navbar-expand-lg  navbar-dark text-black py-4 border-bottom nav">
+  <div class="container">
+    <a class="navbar-brand nav_num " href="/">  <img src="static/images/14.jpg" alt="" style="width:100px"  height="50" > <span class="style">STYLE</span> <span class="zon">MAKER ZONE</span></a>
+    
+    {{!-- {{data.brandName}} --}}
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">     
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+       {{#each data.links}}
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{this.url}}">{{this.label}}</a>
+        </li>
+        {{/each}}
+
+
+          {{!-- <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown">
+                      Others
+                    </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item" href="#">Link 3</a></li>
+              </ul>
+            </div> --}}
+
+
+
+
+        {{!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Woman</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Others</a>
+        </li> --}}
+
+        <ul/> 
+    </div>
+ </div>
+</nav>
+</body>
+</html>
